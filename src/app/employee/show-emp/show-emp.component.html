@@ -1,0 +1,31 @@
+
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Employee ID</th>
+            <th>Employee Name</th>
+            <th>Date Joined</th>
+            <th>Department</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor = "let dataItem of EmployeeList">
+            <td>{{ dataItem.employeeID }}</td>
+            <td>{{ dataItem.employeeName }}</td>
+            <td>{{ dataItem.dateJoining }}</td>
+            <td>{{ dataItem.department.departmentName }}</td>
+            <td>
+                <button type="button" class="btn btn-light mr-1">
+                    Edit
+                </button>
+
+                <button type="button" class="btn btn-light mr-1">
+                    Delete
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
