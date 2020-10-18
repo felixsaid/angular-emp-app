@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "employee-ui-app"
+    }
+  },
+  "defaultProject": "employee-ui-app",
+  "cli": {
+    "analytics": "ecbf486a-0f1b-45cd-a78d-0f90d165d101"
+  }
 }
